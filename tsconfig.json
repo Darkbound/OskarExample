@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "lib": ["es6", "dom", "dom.iterable", "esnext"],
+    "baseUrl": "./src",
+    "paths": {
+      "~/assets": ["assets"],
+      "~/collections": ["collections"],
+      "~/components": ["components"],
+      "~/context": ["context"],
+      "~/data": ["data"],
+      "~/hooks": ["hooks"],
+      "~/server": ["server"],
+      "~/styles": ["styles"],
+      "~/types": ["types"],
+      "~/utils": ["utils"]
+    },
+    "allowJs": false,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "target": "ESNext",
+    "jsx": "preserve",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "skipLibCheck": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "exclude": ["node_modules"]
+}

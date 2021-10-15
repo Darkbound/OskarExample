@@ -1,0 +1,58 @@
+.mainContainer {
+  @apply w-screen h-screen flex justify-center;
+  @apply pt-14;
+  @apply bg-black;
+}
+
+.contentWrapper {
+  @apply max-w-3xl;
+  @apply pt-32;
+  @apply flex flex-col items-center;
+  @apply text-center text-white;
+  @apply opacity-0;
+}
+
+.ctaContainer {
+  @apply flex justify-center;
+  @apply mt-11 space-x-6;
+}
+
+.logoContainer {
+  @apply w-44;
+}
+
+.btnPrimary {
+  @apply px-8 py-3;
+  @apply font-bold;
+  @apply bg-blue-600;
+  @apply rounded-xl;
+  @apply cursor-pointer;
+  @apply hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400; /* the only copied code from your website */
+}
+
+.title {
+  @apply mt-4;
+  @apply text-7.5xl; /* Corresponds to 84 px === 5.25 rem === text-7.5xl - custom font size created in tailwind.config.js */
+  @apply font-bold;
+  @apply bg-gradient-to-r from-gray-500 via-gray-200 to-gray-500 bg-clip-text text-transparent;
+}
+
+.subtitle {
+  @apply mt-16;
+  @apply text-2xl; /* Corresponds to 32px === 2 rem === text-2xl */
+  @apply font-semibold;
+}
+
+.paragraph {
+  @apply mt-2;
+  @apply text-3xl; /* Required is 28px === 1.75 rem, closest available is text-3xl which is 1.875rem, but can also be created in the config */
+  @apply font-medium;
+}
+
+.animateTranslation {
+  @apply opacity-100;
+  @apply transition-all;
+  @apply ease-in;
+  @apply transform -translate-y-32;
+  @apply delay-500 duration-3000;
+}

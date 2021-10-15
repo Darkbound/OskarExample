@@ -1,0 +1,25 @@
+{
+  "presets": ["next/babel", ["@babel/preset-env", { "modules": false }]],
+  "plugins": [
+    ["@babel/plugin-transform-runtime"],
+    ["styled-components", { "ssr": true }],
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "~/assets": "./src/assets",
+          "~/collections": "./src/collections",
+          "~/components": "./src/components",
+          "~/context": "./src/context",
+          "~/data": "./src/data",
+          "~/hooks": "./src/hooks",
+          "~/server": "./src/server",
+          "~/services": "./src/services",
+          "~/styles": "./src/styles",
+          "~/types": "./src/types",
+          "~/utils": "./src/utils"
+        }
+      }
+    ]
+  ]
+}
